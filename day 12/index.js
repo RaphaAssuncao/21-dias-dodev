@@ -39,12 +39,12 @@ while (proceed) {
         let passwordsAux = []
         let counterAux = 0
         
-        for (let i = 0; i < names.length; i++) {
-            if (delete name == names[i]) {
+        for (let i = 0; i < counter; i++) {
+            if (deleteName == names[i]) {
                 alert("Registration successfully deleted")
             } else {
                 namesAux[counterAux] = names[i]
-                passwords[counterAux] = passwords[i]
+                passwordsAux[counterAux] = passwords[i]
                 counterAux++
             }
         }
@@ -61,8 +61,5 @@ while (proceed) {
     default:
         console.log("Invalid option, choose another option!")
         break;
-
-
-    
     }
 }
